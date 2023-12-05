@@ -1,0 +1,13 @@
+myEnv/
+**/__pycache__
+*.mat
+*.ini
+*.png
+env/
+data/
+*.dat
+
+**/.ipynb_checkpoints
+**/.virtual_documents
+
+Readme.pdf

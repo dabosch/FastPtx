@@ -1,0 +1,11 @@
+spyder
+rtree
+jupyterlab
+
+scipy>=1.7.3
+mat73>=0.55
+matplotlib
+numpy
+opencv-python
+
+torch
