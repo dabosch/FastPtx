@@ -853,8 +853,8 @@ class smallTipAngle:
         
         clim=[0,limits['plotscale']]
         pos = [int(x/2) for x in FA3D.shape]
-        #pos[2] = pos[2] + 15
-        pos=[32,32,41]
+        pos[2] = int(float(pos[2]) * 1.3)
+        #pos=[32,32,41]
         cmap='turbo'
         
         f = plt.figure(figsize=[15,15])

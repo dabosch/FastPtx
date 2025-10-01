@@ -86,11 +86,11 @@ def readData(fname,dev=torch.device('cpu'),dt=torch.float32,Unorm=None,
     dist = torch.zeros((3,)+dat['s'].shape[0:3],device=dev)
     
     for i in range(dist.shape[3]):
-        dist[2,:,:,i] = (i-dat['meta']['isocenter'][2])*dat['meta']['voxSz'][2]
+        dist[2,:,:,i] = (float(i)-dat['meta']['isocenter'][2])*dat['meta']['voxSz'][2]
     for i in range(dist.shape[2]):
-        dist[1,:,i,:] = (i-dat['meta']['isocenter'][1])*dat['meta']['voxSz'][1]
+        dist[1,:,i,:] = (float(i)-dat['meta']['isocenter'][1])*dat['meta']['voxSz'][1]
     for i in range(dist.shape[1]):
-        dist[0,i,:,:] = (i-dat['meta']['isocenter'][0])*dat['meta']['voxSz'][0]
+        dist[0,i,:,:] = (float(i)-dat['meta']['isocenter'][0])*dat['meta']['voxSz'][0]
     dat['dist'] = dist
     # normalize maps to ref voltage
     if Unorm is not None:
