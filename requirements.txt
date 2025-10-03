@@ -1,6 +1,5 @@
-spyder
 rtree
-jupyterlab
+ipykernel
 
 scipy>=1.7.3
 mat73>=0.55

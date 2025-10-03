@@ -6,8 +6,11 @@ myEnv/
 env/
 data/
 *.dat
+data.tar
 
 **/.ipynb_checkpoints
 **/.virtual_documents
 
 Readme.pdf
+
+img/
